@@ -1,0 +1,10 @@
+# sync your repo
+git checkout master
+git fetch
+git merge --ff origin/master
+# rebase your working branch to master
+git checkout -
+git rebase master
+# merge with --no-ff (so you will see the branch in your graph)
+git checkout -
+git merge --no-ff gix3
